@@ -43,28 +43,31 @@
                       placeholder="Enter the expense amount"
                     ></ion-input>
                   </ion-item>
-                    <div margin-vertical text-right>
-                      <ion-button id="confirm" fill="outline" color="primary">
-                        <ion-icon slot="start" name="add"></ion-icon> Add Expense
-                      </ion-button>
-                      <ion-button id="cancel" fill="outline" color="danger">
-                        <ion-icon slot="start" name="close"></ion-icon>Clear
-                      </ion-button>
+                  <div margin-vertical text-right>
+                    <ion-button id="confirm" fill="outline" color="primary">
+                      <ion-icon slot="start" name="add"></ion-icon> Add Expense
+                    </ion-button>
+                    <ion-button id="cancel" fill="outline" color="danger">
+                      <ion-icon slot="start" name="close"></ion-icon>Clear
+                    </ion-button>
                   </div>
                 </ion-card-content>
               </ion-card>
             </ion-col>
           </ion-row>
           <ion-row>
-            <ion-col>
-              <ion-list id="expense-list">
-                
-              </ion-list>
+            <ion-col size-md="6" offset-md="3">
+              <ion-list id="expense-list"> </ion-list>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col text-center>
+              <h1>Total Expenses : <span id="net"></span></h1>
             </ion-col>
           </ion-row>
         </ion-grid>
       </ion-content>
     </ion-app>
-     <script src="budget.js"></script>
+    <script src="budget.js"></script>
   </body>
 </html>
